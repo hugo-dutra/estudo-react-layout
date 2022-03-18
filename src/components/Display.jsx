@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 const Display = props => {
   return (
-    <div>Display</div>
+    <div className='Display'>
+      <input className='Input' type='text'/>
+    </div>
   )
 }
 

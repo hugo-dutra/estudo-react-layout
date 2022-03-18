@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const Panel = props => {
   return (
-    <div>Panel</div>
+    <div className='Panel'>Panel</div>
   )
 }
 
