@@ -1,5 +1,9 @@
 .Panel{
-    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    background-color: rgb(68, 67, 67);
     height: 80%;
     border-radius: 0px 0px 5px 5px ;
+    gap:1px;
 }

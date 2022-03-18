@@ -3,9 +3,11 @@ import React from 'react';
 import PropTypes from 'prop-types';   
 
 const Button = props => {
-  const {label} = props;
+  const {label, type, buttonClass} = props;
+  
+  console.log(buttonClass)
   return (
-    <button>
+    <button className={`${[...buttonClass].toString().replace(',',' ')}`}>
       {label}
     </button>
   )
@@ -13,7 +15,8 @@ const Button = props => {
 
 Button.propTypes = {
   label:PropTypes.string.isRequired,
-  operation:PropTypes.func.isRequired
+  type:PropTypes.func.isRequired,
+  buttonClass:PropTypes.string.isRequired
 };
 
 export default Button;

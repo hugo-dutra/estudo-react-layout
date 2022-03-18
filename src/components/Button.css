@@ -1,3 +1,27 @@
 .Button{
     
 }
+
+.GrayButton{
+color: #7c7e80;
+background-color: #d8d9db;
+font-size: 1.4em;
+border: none;
+}
+.GrayButton:active{
+    background-color: #f2f6fd;
+}
+
+.YellowButton{
+color: white;
+background-color: #ec953c;
+font-size: 1.4em;
+border: none;
+}
+.YellowButton:active{
+background-color: #f7b572;
+}
+
+.StartDoubleButton{
+grid-column: 1/3;
+}
