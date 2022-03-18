@@ -1,0 +1,8 @@
+.MainScreen {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 5px;
+}
