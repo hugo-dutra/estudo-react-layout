@@ -1,13 +1,13 @@
 import './Button.css';
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';   
+import { NumberContext } from '../data/NumberContext';
 
 const Button = props => {
-  const {label, type, buttonClass} = props;
+  const {label, type, buttonClass, updateData} = props;
   
-  console.log(type)
   return (
-    <button className={`${[...buttonClass].toString().replace(',',' ')}`}>
+    <button value={label} className={`${[...buttonClass].toString().replace(',',' ')}`} onClick={()=>{updateData(label,type)} }>
       {label}
     </button>
   )
@@ -16,7 +16,8 @@ const Button = props => {
 Button.propTypes = {
   label:PropTypes.string.isRequired,
   type:PropTypes.string.isRequired,
-  buttonClass:PropTypes.string.isRequired
+  buttonClass:PropTypes.array.isRequired,
+  updateData:PropTypes.func.isRequired
 };
 
 export default Button;
