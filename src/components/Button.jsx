@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Button = props => {
   const {label, type, buttonClass} = props;
   
-  console.log(buttonClass)
+  console.log(type)
   return (
     <button className={`${[...buttonClass].toString().replace(',',' ')}`}>
       {label}
@@ -15,7 +15,7 @@ const Button = props => {
 
 Button.propTypes = {
   label:PropTypes.string.isRequired,
-  type:PropTypes.func.isRequired,
+  type:PropTypes.string.isRequired,
   buttonClass:PropTypes.string.isRequired
 };
 

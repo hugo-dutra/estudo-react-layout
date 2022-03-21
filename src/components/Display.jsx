@@ -1,6 +1,6 @@
 import './Display.css';
 import React from 'react';
-import PropTypes from 'prop-types';
+/* import PropTypes from 'prop-types'; */
 
 const Display = props => {
   return (
@@ -10,6 +10,6 @@ const Display = props => {
   )
 }
 
-Display.propTypes = {};
+/* Display.propTypes = {}; */
 
-export default Display;
+export default Display;    
